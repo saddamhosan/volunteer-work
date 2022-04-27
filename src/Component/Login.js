@@ -51,7 +51,7 @@ const Login = () => {
       </form>
       <p className="text-xl text-center my-3">
         Don't have an account?
-        <span className="text-orange-500">Create an account</span>
+        <span onClick={()=>navigate('/register')} className="text-orange-500 cursor-pointer">Create an account</span>
       </p>
       <p className="text-xl text-center my-3">
         Forget password? <span className="text-orange-500">Reset Password</span>

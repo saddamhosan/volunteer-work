@@ -7,7 +7,6 @@ import logo from '../images/logos/Group 1329.png';
 
 const Header = () => {
     const [user] = useAuthState(auth);
-    console.log(user);
     return (
       <div className="flex justify-between mx-10 items-center my-5">
         <div>
@@ -18,15 +17,15 @@ const Header = () => {
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/donation">Donation</NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink to="/event">Event</NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/blog">Blog</NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink to="/register">Register</NavLink>
             </li>

@@ -79,13 +79,10 @@ const Register = () => {
               />
             </form>
             <p className="text-xl text-center my-3">
-              Don't have an account?{" "}
-              <span className="text-orange-500">Create an account</span>
+             Already have an account?
+              <span onClick={()=>navigate('/login')} className="text-orange-500 cursor-pointer">Login</span>
             </p>
-            <p className="text-xl text-center my-3">
-              Forget password?
-              <span className="text-orange-500">Reset Password</span>
-            </p>
+            
             <div className="flex items-center mx-8">
               <div className="bg-gray-400 w-1/2 h-[1px]"></div>
               <p className="mx-3">Or</p>
